@@ -14,6 +14,11 @@
 		BDA9BF002C584A120055FF8E /* MVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA9BEFF2C584A120055FF8E /* MVPTests.swift */; };
 		BDA9BF0A2C584A120055FF8E /* MVPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA9BF092C584A120055FF8E /* MVPUITests.swift */; };
 		BDA9BF0C2C584A120055FF8E /* MVPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA9BF0B2C584A120055FF8E /* MVPUITestsLaunchTests.swift */; };
+		BDCEB25F2C595C8D00BA9966 /* AtkinsonHyperlegible-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDCEB25E2C595C8D00BA9966 /* AtkinsonHyperlegible-Regular.ttf */; };
+		BDCEB2612C595D1E00BA9966 /* Times New Roman MT Std Condensed.otf in Resources */ = {isa = PBXBuildFile; fileRef = BDCEB2602C595D1E00BA9966 /* Times New Roman MT Std Condensed.otf */; };
+		BDCEB2642C59620100BA9966 /* Times New Roman MT Condensed Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BDCEB2632C59620100BA9966 /* Times New Roman MT Condensed Italic.otf */; };
+		BDCEB2672C5984AC00BA9966 /* AtkinsonHyperlegible-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDCEB2662C5984AC00BA9966 /* AtkinsonHyperlegible-Bold.ttf */; };
+		BDCEB26A2C598DF900BA9966 /* calendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCEB2692C598DF900BA9966 /* calendarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,15 @@
 		BDA9BF052C584A120055FF8E /* MVPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDA9BF092C584A120055FF8E /* MVPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPUITests.swift; sourceTree = "<group>"; };
 		BDA9BF0B2C584A120055FF8E /* MVPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BDA9BF1D2C584DDF0055FF8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BDCEB25E2C595C8D00BA9966 /* AtkinsonHyperlegible-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AtkinsonHyperlegible-Regular.ttf"; path = "../../Downloads/AtkinsonHyperlegible-Regular.ttf"; sourceTree = "<group>"; };
+		BDCEB2602C595D1E00BA9966 /* Times New Roman MT Std Condensed.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Times New Roman MT Std Condensed.otf"; path = "../../../Downloads/Times New Roman MT Std Condensed.otf"; sourceTree = "<group>"; };
+		BDCEB2622C595D2900BA9966 /* Times New Roman MT Std Condensed.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Times New Roman MT Std Condensed.otf"; sourceTree = "<group>"; };
+		BDCEB2632C59620100BA9966 /* Times New Roman MT Condensed Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Times New Roman MT Condensed Italic.otf"; path = "../../../Downloads/Times New Roman MT Condensed Italic.otf"; sourceTree = "<group>"; };
+		BDCEB2652C59621800BA9966 /* Times New Roman MT Condensed Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Times New Roman MT Condensed Italic.otf"; sourceTree = "<group>"; };
+		BDCEB2662C5984AC00BA9966 /* AtkinsonHyperlegible-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AtkinsonHyperlegible-Bold.ttf"; path = "../../../Downloads/AtkinsonHyperlegible-Bold.ttf"; sourceTree = "<group>"; };
+		BDCEB2682C5984B300BA9966 /* AtkinsonHyperlegible-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AtkinsonHyperlegible-Bold.ttf"; sourceTree = "<group>"; };
+		BDCEB2692C598DF900BA9966 /* calendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +88,10 @@
 		BDA9BEE22C584A110055FF8E = {
 			isa = PBXGroup;
 			children = (
+				BDCEB25E2C595C8D00BA9966 /* AtkinsonHyperlegible-Regular.ttf */,
+				BDCEB2622C595D2900BA9966 /* Times New Roman MT Std Condensed.otf */,
+				BDCEB2652C59621800BA9966 /* Times New Roman MT Condensed Italic.otf */,
+				BDCEB2682C5984B300BA9966 /* AtkinsonHyperlegible-Bold.ttf */,
 				BDA9BEED2C584A110055FF8E /* MVP */,
 				BDA9BEFE2C584A120055FF8E /* MVPTests */,
 				BDA9BF082C584A120055FF8E /* MVPUITests */,
@@ -94,8 +112,13 @@
 		BDA9BEED2C584A110055FF8E /* MVP */ = {
 			isa = PBXGroup;
 			children = (
+				BDA9BF1D2C584DDF0055FF8E /* Info.plist */,
 				BDA9BEEE2C584A110055FF8E /* MVPApp.swift */,
 				BDA9BEF02C584A110055FF8E /* ContentView.swift */,
+				BDCEB2692C598DF900BA9966 /* calendarView.swift */,
+				BDCEB2662C5984AC00BA9966 /* AtkinsonHyperlegible-Bold.ttf */,
+				BDCEB2632C59620100BA9966 /* Times New Roman MT Condensed Italic.otf */,
+				BDCEB2602C595D1E00BA9966 /* Times New Roman MT Std Condensed.otf */,
 				BDA9BEF22C584A120055FF8E /* Assets.xcassets */,
 				BDA9BEF42C584A120055FF8E /* Preview Content */,
 			);
@@ -231,8 +254,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDCEB2672C5984AC00BA9966 /* AtkinsonHyperlegible-Bold.ttf in Resources */,
 				BDA9BEF62C584A120055FF8E /* Preview Assets.xcassets in Resources */,
+				BDCEB2642C59620100BA9966 /* Times New Roman MT Condensed Italic.otf in Resources */,
+				BDCEB25F2C595C8D00BA9966 /* AtkinsonHyperlegible-Regular.ttf in Resources */,
 				BDA9BEF32C584A120055FF8E /* Assets.xcassets in Resources */,
+				BDCEB2612C595D1E00BA9966 /* Times New Roman MT Std Condensed.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDCEB26A2C598DF900BA9966 /* calendarView.swift in Sources */,
 				BDA9BEF12C584A110055FF8E /* ContentView.swift in Sources */,
 				BDA9BEEF2C584A110055FF8E /* MVPApp.swift in Sources */,
 			);
@@ -425,6 +453,8 @@
 				DEVELOPMENT_TEAM = 9S98BN32U6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MVP/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +484,8 @@
 				DEVELOPMENT_TEAM = 9S98BN32U6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MVP/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
