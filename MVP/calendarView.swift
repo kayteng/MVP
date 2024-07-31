@@ -14,7 +14,7 @@ struct calendarView: View {
                 Color(red: 247/255, green: 240/255, blue: 233/255)
                     .ignoresSafeArea()
                 HStack (alignment : .top){
-                    NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                    NavigationLink(destination: ContentView()) {
                         Image("home icon")
                             .resizable(resizingMode: .stretch)
                             .aspectRatio(contentMode: .fit)
@@ -31,13 +31,13 @@ struct calendarView: View {
                         .aspectRatio(contentMode: .fit)
                         .padding([.top, .leading, .bottom], 10.0)
                         .frame(width: 70.0, height: 70.0)
-                    NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/){
+                    NavigationLink(destination: mapView()){
                         Image("map icon")
                             .resizable(resizingMode: .stretch)
                             .aspectRatio(contentMode: .fit)
                             .padding([.top, .leading, .bottom], 10.0)
                         .frame(width: 70.0, height: 70.0)}
-                    NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                    NavigationLink(destination: profileView()) {
                         Image("profile icon")
                             .resizable(resizingMode: .stretch)
                             .aspectRatio(contentMode: .fit)

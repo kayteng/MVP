@@ -42,7 +42,7 @@ struct ContentView: View {
                             .foregroundColor(Color(red: 193/255, green: 138/255, blue: 118/255))
                             .fontWeight(.bold)
                         
-                        // Tops
+                        // Body
                         ScrollView {
                             VStack(alignment:.leading) {
                                 Text ("Tops")
@@ -356,13 +356,13 @@ struct ContentView: View {
                         .padding(.horizontal)
                     }
                     Spacer()
+                //Toolbar
                     HStack (alignment : .top){
-                        NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
                             Image("home icon")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
                                 .padding([.top, .leading, .bottom], 10.0)
-                            .frame(width: 70.0, height: 70.0)}
+                            .frame(width: 70.0, height: 70.0)
                         NavigationLink(destination: infoView()) {
                             Image("info icon")
                                 .resizable(resizingMode: .stretch)
@@ -374,13 +374,13 @@ struct ContentView: View {
                             .aspectRatio(contentMode: .fit)
                             .padding([.top, .leading, .bottom], 10.0)
                             .frame(width: 70.0, height: 70.0)
-                        NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/){
+                        NavigationLink(destination: mapView()){
                             Image("map icon")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
                                 .padding([.top, .leading, .bottom], 10.0)
                             .frame(width: 70.0, height: 70.0)}
-                        NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                        NavigationLink(destination: profileView()) {
                             Image("profile icon")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
