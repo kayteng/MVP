@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var button = true
     var body: some View {
         NavigationStack{
             ZStack (alignment: .bottom){
@@ -51,20 +52,20 @@ struct ContentView: View {
                                     .fontWeight(.bold)
                                 ScrollView(.horizontal){
                                     HStack(spacing: 20) {
-                                        VStack {
-                                            Text("Name")
-                                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
-                                                .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                            
-                                            Image("camera")
-                                                .resizable(resizingMode: .stretch)
-                                                .aspectRatio(contentMode: .fit)
-                                                .padding(.bottom, 10.0)
-                                                .frame(width: 150.0, height: 150.0)
-                                        }
-                                        .background(Rectangle()
-                                            .foregroundColor(Color.white))
-                                        .cornerRadius(15)
+                                            VStack {
+                                                Text("Name")
+                                                    .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
+                                                    .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
+                                                
+                                                Image("camera")
+                                                    .resizable(resizingMode: .stretch)
+                                                    .aspectRatio(contentMode: .fit)
+                                                    .padding(.bottom, 10.0)
+                                                    .frame(width: 150.0, height: 150.0)
+                                            }
+                                            .background(Rectangle()
+                                                .foregroundColor(Color.white))
+                                            .cornerRadius(15)
                                         
                                         VStack {
                                             Text("Name")
@@ -391,8 +392,11 @@ struct ContentView: View {
                     .foregroundColor(Color(red: 57/255, green: 60/255, blue: 90/255))
                     .cornerRadius(45)
                 }
-            Button{
-                    var hi = 1
+            Button {
+                if button == true {
+                   
+                }
+                
             } label: {
                 Image("plus icon")
                     .resizable(resizingMode: .stretch)
@@ -407,3 +411,5 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+
+
