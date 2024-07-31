@@ -14,6 +14,7 @@
 		BDA9BF002C584A120055FF8E /* MVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA9BEFF2C584A120055FF8E /* MVPTests.swift */; };
 		BDA9BF0A2C584A120055FF8E /* MVPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA9BF092C584A120055FF8E /* MVPUITests.swift */; };
 		BDA9BF0C2C584A120055FF8E /* MVPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA9BF0B2C584A120055FF8E /* MVPUITestsLaunchTests.swift */; };
+		BDAC53632C5AA30900706A15 /* infoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC53622C5AA30900706A15 /* infoView.swift */; };
 		BDCEB25F2C595C8D00BA9966 /* AtkinsonHyperlegible-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDCEB25E2C595C8D00BA9966 /* AtkinsonHyperlegible-Regular.ttf */; };
 		BDCEB2612C595D1E00BA9966 /* Times New Roman MT Std Condensed.otf in Resources */ = {isa = PBXBuildFile; fileRef = BDCEB2602C595D1E00BA9966 /* Times New Roman MT Std Condensed.otf */; };
 		BDCEB2642C59620100BA9966 /* Times New Roman MT Condensed Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BDCEB2632C59620100BA9966 /* Times New Roman MT Condensed Italic.otf */; };
@@ -50,6 +51,7 @@
 		BDA9BF092C584A120055FF8E /* MVPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPUITests.swift; sourceTree = "<group>"; };
 		BDA9BF0B2C584A120055FF8E /* MVPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BDA9BF1D2C584DDF0055FF8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BDAC53622C5AA30900706A15 /* infoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoView.swift; sourceTree = "<group>"; };
 		BDCEB25E2C595C8D00BA9966 /* AtkinsonHyperlegible-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AtkinsonHyperlegible-Regular.ttf"; path = "../../Downloads/AtkinsonHyperlegible-Regular.ttf"; sourceTree = "<group>"; };
 		BDCEB2602C595D1E00BA9966 /* Times New Roman MT Std Condensed.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Times New Roman MT Std Condensed.otf"; path = "../../../Downloads/Times New Roman MT Std Condensed.otf"; sourceTree = "<group>"; };
 		BDCEB2622C595D2900BA9966 /* Times New Roman MT Std Condensed.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Times New Roman MT Std Condensed.otf"; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				BDA9BEEE2C584A110055FF8E /* MVPApp.swift */,
 				BDA9BEF02C584A110055FF8E /* ContentView.swift */,
 				BDCEB2692C598DF900BA9966 /* calendarView.swift */,
+				BDAC53622C5AA30900706A15 /* infoView.swift */,
 				BDCEB2662C5984AC00BA9966 /* AtkinsonHyperlegible-Bold.ttf */,
 				BDCEB2632C59620100BA9966 /* Times New Roman MT Condensed Italic.otf */,
 				BDCEB2602C595D1E00BA9966 /* Times New Roman MT Std Condensed.otf */,
@@ -284,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDAC53632C5AA30900706A15 /* infoView.swift in Sources */,
 				BDCEB26A2C598DF900BA9966 /* calendarView.swift in Sources */,
 				BDA9BEF12C584A110055FF8E /* ContentView.swift in Sources */,
 				BDA9BEEF2C584A110055FF8E /* MVPApp.swift in Sources */,
