@@ -6,8 +6,17 @@
 //
 
 import SwiftUI
+import SwiftData
+import UIKit
 
 struct ContentView: View {
+    
+    @State private var showNewPiece = false
+    
+    @Query var closetItems: [ClosetItem] 
+    
+    @Environment(\.modelContext) var modelContext
+    
     var body: some View {
         NavigationStack{
             ZStack (alignment: .bottom){
@@ -19,7 +28,7 @@ struct ContentView: View {
                         HStack (alignment:.center) {
                             Text("Your Closet")
                                 .fontWeight(.black)
-                                .font(Font.custom("Times New Roman MT Condensed Italic", size: 60))
+                                //.font(Font.custom("Times New Roman MT Condensed Italic", size: 60))
                                 .foregroundColor(Color(red: 57/255, green: 60/255, blue: 90/255))
                             Spacer()
                             NavigationLink(destination: calendarView()) {
@@ -46,7 +55,7 @@ struct ContentView: View {
                         ScrollView {
                             VStack(alignment:.leading) {
                                 Text ("Tops")
-                                    .font(Font.custom("AtkinsonHyperlegible-Regular", size: 36))
+                                    //.font(Font.custom("AtkinsonHyperlegible-Regular", size: 36))
                                     .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
                                     .fontWeight(.bold)
                                 ScrollView(.horizontal){
@@ -97,14 +106,14 @@ struct ContentView: View {
                                 }
                                 
                                 Text ("Bottoms")
-                                    .font(Font.custom("AtkinsonHyperlegible-Regular", size: 36))
+                                    //.font(Font.custom("AtkinsonHyperlegible-Regular", size: 36))
                                     .fontWeight(.bold)
                                     .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
                                 ScrollView(.horizontal){
                                     HStack(spacing: 20) {
                                         VStack {
                                             Text("Name")
-                                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
+                                               // .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
                                                 .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
                                             
                                             Image("camera")
@@ -119,7 +128,7 @@ struct ContentView: View {
                                         
                                         VStack {
                                             Text("Name")
-                                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
+                                               // .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
                                                 .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
                                             Image("camera")
                                                 .resizable(resizingMode: .stretch)
@@ -133,7 +142,7 @@ struct ContentView: View {
                                         
                                         VStack {
                                             Text("Name")
-                                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
+                                                //.font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
                                                 .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
                                             Image("camera")
                                                 .resizable(resizingMode: .stretch)
@@ -148,14 +157,14 @@ struct ContentView: View {
                                 }
                                 
                                 Text("Outerwear")
-                                    .font(Font.custom("AtkinsonHyperlegible-Regular", size: 36))
+                                    //.font(Font.custom("AtkinsonHyperlegible-Regular", size: 36))
                                     .fontWeight(.bold)
                                     .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
                                 ScrollView(.horizontal){
                                     HStack(spacing: 20) {
                                         VStack {
                                             Text("Name")
-                                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
+                                               // .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
                                                 .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
                                             
                                             Image("camera")
@@ -170,7 +179,7 @@ struct ContentView: View {
                                         
                                         VStack {
                                             Text("Name")
-                                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
+                                               // .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
                                                 .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
                                             Image("camera")
                                                 .resizable(resizingMode: .stretch)
@@ -184,7 +193,7 @@ struct ContentView: View {
                                         
                                         VStack {
                                             Text("Name")
-                                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
+                                             //   .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
                                                 .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
                                             Image("camera")
                                                 .resizable(resizingMode: .stretch)
@@ -199,14 +208,14 @@ struct ContentView: View {
                                 }
                                 
                                 Text("Footwear")
-                                    .font(Font.custom("AtkinsonHyperlegible-Regular", size: 36))
+                                 //   .font(Font.custom("AtkinsonHyperlegible-Regular", size: 36))
                                     .fontWeight(.bold)
                                     .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
                                 ScrollView(.horizontal){
                                     HStack(spacing: 20) {
                                         VStack {
                                             Text("Name")
-                                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
+                                               // .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
                                                 .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
                                             
                                             Image("camera")
@@ -221,7 +230,7 @@ struct ContentView: View {
                                         
                                         VStack {
                                             Text("Name")
-                                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
+                                              //  .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
                                                 .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
                                             Image("camera")
                                                 .resizable(resizingMode: .stretch)
@@ -235,7 +244,7 @@ struct ContentView: View {
                                         
                                         VStack {
                                             Text("Name")
-                                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
+                                               // .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
                                                 .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
                                             Image("camera")
                                                 .resizable(resizingMode: .stretch)
@@ -250,14 +259,14 @@ struct ContentView: View {
                                 }
                                 
                                 Text("Bags")
-                                    .font(Font.custom("AtkinsonHyperlegible-Regular", size: 36))
+                                   // .font(Font.custom("AtkinsonHyperlegible-Regular", size: 36))
                                     .fontWeight(.bold)
                                     .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
                                 ScrollView(.horizontal){
                                     HStack(spacing: 20) {
                                         VStack {
                                             Text("Name")
-                                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
+                                               // .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
                                                 .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
                                             
                                             Image("camera")
@@ -272,7 +281,7 @@ struct ContentView: View {
                                         
                                         VStack {
                                             Text("Name")
-                                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
+                                               // .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
                                                 .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
                                             Image("camera")
                                                 .resizable(resizingMode: .stretch)
@@ -286,7 +295,7 @@ struct ContentView: View {
                                         
                                         VStack {
                                             Text("Name")
-                                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
+                                                // .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
                                                 .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
                                             Image("camera")
                                                 .resizable(resizingMode: .stretch)
@@ -301,14 +310,14 @@ struct ContentView: View {
                                 }
                                 
                                 Text("Accessories")
-                                    .font(Font.custom("AtkinsonHyperlegible-Regular", size: 36))
+                                  //  .font(Font.custom("AtkinsonHyperlegible-Regular", size: 36))
                                     .fontWeight(.bold)
                                     .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
                                 ScrollView(.horizontal){
                                     HStack(spacing: 20) {
                                         VStack {
                                             Text("Name")
-                                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
+                                        //        .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
                                                 .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
                                             
                                             Image("camera")
@@ -323,7 +332,7 @@ struct ContentView: View {
                                         
                                         VStack {
                                             Text("Name")
-                                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
+                                             //   .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
                                                 .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
                                             Image("camera")
                                                 .resizable(resizingMode: .stretch)
@@ -337,7 +346,7 @@ struct ContentView: View {
                                         
                                         VStack {
                                             Text("Name")
-                                                .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
+                                               // .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
                                                 .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
                                             Image("camera")
                                                 .resizable(resizingMode: .stretch)
@@ -392,7 +401,7 @@ struct ContentView: View {
                     .cornerRadius(45)
                 }
             Button{
-                    var hi = 1
+//                    var hi = 1
             } label: {
                 Image("plus icon")
                     .resizable(resizingMode: .stretch)

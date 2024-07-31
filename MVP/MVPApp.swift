@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct MVPApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .modelContainer(for: ClosetItem.self)
         }
     }
 }
