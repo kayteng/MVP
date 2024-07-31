@@ -1,15 +1,15 @@
 //
-//  calendarView.swift
+//  SwiftUIView.swift
 //  MVP
 //
-//  Created by Scholar on 7/30/24.
+//  Created by Scholar on 7/31/24.
 //
 
 import SwiftUI
 
-struct calendarView: View {
+struct SwiftUIView: View {
     var body: some View {
-        NavigationStack{
+        NavigationStack {
             ZStack (alignment: .bottom){
                 Color(red: 247/255, green: 240/255, blue: 233/255)
                     .ignoresSafeArea()
@@ -61,5 +61,5 @@ struct calendarView: View {
 }
 
 #Preview {
-    calendarView()
+    SwiftUIView()
 }
