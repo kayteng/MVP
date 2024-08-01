@@ -79,7 +79,7 @@ struct ContentView: View {
                         HStack (alignment:.center) {
                             Text("Your Closet")
                                 .fontWeight(.black)
-                            //.font(Font.custom("Times New Roman MT Condensed Italic", size: 60))
+                                .font(Font.custom("Times New Roman MT Condensed Italic", size: 60))
                                 .foregroundColor(Color(red: 57/255, green: 60/255, blue: 90/255))
                             Spacer()
                             NavigationLink(destination: calendarView()) {
@@ -106,7 +106,7 @@ struct ContentView: View {
                         ScrollView {
                             VStack(alignment:.leading) {
                                 Text ("Tops")
-                                //.font(Font.custom("AtkinsonHyperlegible-Regular", size: 36))
+                                    .font(Font.custom("AtkinsonHyperlegible-Regular", size: 36))
                                     .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
                                     .fontWeight(.bold)
                                 ScrollView(.horizontal){
@@ -157,264 +157,257 @@ struct ContentView: View {
                                                 
                                     }
                                 }
-                                       
-                            }
-                                    
-                                    Text ("Bottoms")
-                                    //.font(Font.custom("AtkinsonHyperlegible-Regular", size: 36))
-                                        .fontWeight(.bold)
-                                        .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                    ScrollView(.horizontal){
-                                        HStack(spacing: 20) {
-                                            VStack {
-                                                Text("Name")
-                                                // .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
-                                                    .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                                
-                                                Image("camera")
-                                                    .resizable(resizingMode: .stretch)
-                                                    .aspectRatio(contentMode: .fit)
-                                                    .padding(.bottom, 10.0)
-                                                    .frame(width: 150.0, height: 150.0)
-                                            }
-                                            .background(Rectangle()
-                                                .foregroundColor(Color.white))
-                                            .cornerRadius(15)
+                                
+                                Text ("Bottoms")
+                                    .font(Font.custom("AtkinsonHyperlegible-Regular", size: 36))
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
+                                ScrollView(.horizontal){
+                                    HStack(spacing: 20) {
+                                        VStack {
+                                            Text("Name")
+                                            .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
+                                                .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
                                             
-                                            VStack {
-                                                Text("Name")
-                                                // .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
-                                                    .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                                Image("camera")
-                                                    .resizable(resizingMode: .stretch)
-                                                    .aspectRatio(contentMode: .fit)
-                                                    .padding(.bottom, 10.0)
-                                                    .frame(width: 150.0, height: 150.0)
-                                            }
-                                            .background(Rectangle()
-                                                .foregroundColor(Color.white))
-                                            .cornerRadius(15)
-                                            
-                                            VStack {
-                                                Text("Name")
-                                                //.font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
-                                                    .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                                Image("camera")
-                                                    .resizable(resizingMode: .stretch)
-                                                    .aspectRatio(contentMode: .fit)
-                                                    .padding(.bottom, 10.0)
-                                                    .frame(width: 150.0, height: 150.0)
-                                            }
-                                            .background(Rectangle()
-                                                .foregroundColor(Color.white))
-                                            .cornerRadius(15)
+                                            Image("camera")
+                                                .resizable(resizingMode: .stretch)
+                                                .aspectRatio(contentMode: .fit)
+                                                .padding(.bottom, 10.0)
+                                                .frame(width: 150.0, height: 150.0)
+                                        }
+                                        .background(Rectangle()
+                                            .foregroundColor(Color.white))
+                                        .cornerRadius(15)
+                                        
+                                        VStack {
+                                            Text("Name")
+                                            .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
+                                                .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
+                                            Image("camera")
+                                                .resizable(resizingMode: .stretch)
+                                                .aspectRatio(contentMode: .fit)
+                                                .padding(.bottom, 10.0)
+                                                .frame(width: 150.0, height: 150.0)
+                                        }
+                                        .background(Rectangle()
+                                            .foregroundColor(Color.white))
+                                        .cornerRadius(15)
+                                        
+                                        VStack {
+                                            Text("Name")
+                                            .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
+                                                .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
+                                            Image("camera")
+                                                .resizable(resizingMode: .stretch)
+                                                .aspectRatio(contentMode: .fit)
+                                                .padding(.bottom, 10.0)
+                                                .frame(width: 150.0, height: 150.0)
                                         }
                                     }
-                                    
-                                    Text("Outerwear")
-                                    //.font(Font.custom("AtkinsonHyperlegible-Regular", size: 36))
-                                        .fontWeight(.bold)
-                                        .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                    ScrollView(.horizontal){
-                                        HStack(spacing: 20) {
-                                            VStack {
-                                                Text("Name")
-                                                // .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
-                                                    .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                                
-                                                Image("camera")
-                                                    .resizable(resizingMode: .stretch)
-                                                    .aspectRatio(contentMode: .fit)
-                                                    .padding(.bottom, 10.0)
-                                                    .frame(width: 150.0, height: 150.0)
-                                            }
-                                            .background(Rectangle()
-                                                .foregroundColor(Color.white))
-                                            .cornerRadius(15)
+                                }
+                                
+                                Text("Outerwear")
+                                    .font(Font.custom("AtkinsonHyperlegible-Regular", size: 36))
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
+                                ScrollView(.horizontal){
+                                    HStack(spacing: 20) {
+                                        VStack {
+                                            Text("Name")
+                                            .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
+                                                .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
                                             
-                                            VStack {
-                                                Text("Name")
-                                                // .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
-                                                    .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                                Image("camera")
-                                                    .resizable(resizingMode: .stretch)
-                                                    .aspectRatio(contentMode: .fit)
-                                                    .padding(.bottom, 10.0)
-                                                    .frame(width: 150.0, height: 150.0)
-                                            }
-                                            .background(Rectangle()
-                                                .foregroundColor(Color.white))
-                                            .cornerRadius(15)
-                                            
-                                            VStack {
-                                                Text("Name")
-                                                //   .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
-                                                    .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                                Image("camera")
-                                                    .resizable(resizingMode: .stretch)
-                                                    .aspectRatio(contentMode: .fit)
-                                                    .padding(.bottom, 10.0)
-                                                    .frame(width: 150.0, height: 150.0)
-                                            }
-                                            .background(Rectangle()
-                                                .foregroundColor(Color.white))
-                                            .cornerRadius(15)
+                                            Image("camera")
+                                                .resizable(resizingMode: .stretch)
+                                                .aspectRatio(contentMode: .fit)
+                                                .padding(.bottom, 10.0)
+                                                .frame(width: 150.0, height: 150.0)
                                         }
-                                    }
-                                    
-                                    Text("Footwear")
-                                    //   .font(Font.custom("AtkinsonHyperlegible-Regular", size: 36))
-                                        .fontWeight(.bold)
-                                        .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                    ScrollView(.horizontal){
-                                        HStack(spacing: 20) {
-                                            VStack {
-                                                Text("Name")
-                                                // .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
-                                                    .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                                
-                                                Image("camera")
-                                                    .resizable(resizingMode: .stretch)
-                                                    .aspectRatio(contentMode: .fit)
-                                                    .padding(.bottom, 10.0)
-                                                    .frame(width: 150.0, height: 150.0)
-                                            }
-                                            .background(Rectangle()
-                                                .foregroundColor(Color.white))
-                                            .cornerRadius(15)
-                                            
-                                            VStack {
-                                                Text("Name")
-                                                //  .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
-                                                    .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                                Image("camera")
-                                                    .resizable(resizingMode: .stretch)
-                                                    .aspectRatio(contentMode: .fit)
-                                                    .padding(.bottom, 10.0)
-                                                    .frame(width: 150.0, height: 150.0)
-                                            }
-                                            .background(Rectangle()
-                                                .foregroundColor(Color.white))
-                                            .cornerRadius(15)
-                                            
-                                            VStack {
-                                                Text("Name")
-                                                // .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
-                                                    .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                                Image("camera")
-                                                    .resizable(resizingMode: .stretch)
-                                                    .aspectRatio(contentMode: .fit)
-                                                    .padding(.bottom, 10.0)
-                                                    .frame(width: 150.0, height: 150.0)
-                                            }
-                                            .background(Rectangle()
-                                                .foregroundColor(Color.white))
-                                            .cornerRadius(15)
+                                        .background(Rectangle()
+                                            .foregroundColor(Color.white))
+                                        .cornerRadius(15)
+                                        
+                                        VStack {
+                                            Text("Name")
+                                            .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
+                                                .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
+                                            Image("camera")
+                                                .resizable(resizingMode: .stretch)
+                                                .aspectRatio(contentMode: .fit)
+                                                .padding(.bottom, 10.0)
+                                                .frame(width: 150.0, height: 150.0)
                                         }
-                                    }
-                                    
-                                    Text("Bags")
-                                    // .font(Font.custom("AtkinsonHyperlegible-Regular", size: 36))
-                                        .fontWeight(.bold)
-                                        .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                    ScrollView(.horizontal){
-                                        HStack(spacing: 20) {
-                                            VStack {
-                                                Text("Name")
-                                                // .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
-                                                    .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                                
-                                                Image("camera")
-                                                    .resizable(resizingMode: .stretch)
-                                                    .aspectRatio(contentMode: .fit)
-                                                    .padding(.bottom, 10.0)
-                                                    .frame(width: 150.0, height: 150.0)
-                                            }
-                                            .background(Rectangle()
-                                                .foregroundColor(Color.white))
-                                            .cornerRadius(15)
-                                            
-                                            VStack {
-                                                Text("Name")
-                                                // .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
-                                                    .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                                Image("camera")
-                                                    .resizable(resizingMode: .stretch)
-                                                    .aspectRatio(contentMode: .fit)
-                                                    .padding(.bottom, 10.0)
-                                                    .frame(width: 150.0, height: 150.0)
-                                            }
-                                            .background(Rectangle()
-                                                .foregroundColor(Color.white))
-                                            .cornerRadius(15)
-                                            
-                                            VStack {
-                                                Text("Name")
-                                                // .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
-                                                    .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                                Image("camera")
-                                                    .resizable(resizingMode: .stretch)
-                                                    .aspectRatio(contentMode: .fit)
-                                                    .padding(.bottom, 10.0)
-                                                    .frame(width: 150.0, height: 150.0)
-                                            }
-                                            .background(Rectangle()
-                                                .foregroundColor(Color.white))
-                                            .cornerRadius(15)
+                                        .background(Rectangle()
+                                            .foregroundColor(Color.white))
+                                        .cornerRadius(15)
+                                        
+                                        VStack {
+                                            Text("Name")
+                                            .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
+                                                .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
+                                            Image("camera")
+                                                .resizable(resizingMode: .stretch)
+                                                .aspectRatio(contentMode: .fit)
+                                                .padding(.bottom, 10.0)
+                                                .frame(width: 150.0, height: 150.0)
                                         }
+                                        .background(Rectangle()
+                                            .foregroundColor(Color.white))
+                                        .cornerRadius(15)
                                     }
-                                    
-                                    Text("Accessories")
-                                    //  .font(Font.custom("AtkinsonHyperlegible-Regular", size: 36))
-                                        .fontWeight(.bold)
-                                        .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                    ScrollView(.horizontal){
-                                        HStack(spacing: 20) {
-                                            VStack {
-                                                Text("Name")
-                                                //        .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
-                                                    .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                                
-                                                Image("camera")
-                                                    .resizable(resizingMode: .stretch)
-                                                    .aspectRatio(contentMode: .fit)
-                                                    .padding(.bottom, 10.0)
-                                                    .frame(width: 150.0, height: 150.0)
-                                            }
-                                            .background(Rectangle()
-                                                .foregroundColor(Color.white))
-                                            .cornerRadius(15)
+                                }
+                                
+                                Text("Footwear")
+                                  .font(Font.custom("AtkinsonHyperlegible-Regular", size: 36))
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
+                                ScrollView(.horizontal){
+                                    HStack(spacing: 20) {
+                                        VStack {
+                                            Text("Name")
+                                            .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
+                                                .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
                                             
-                                            VStack {
-                                                Text("Name")
-                                                //   .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
-                                                    .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                                Image("camera")
-                                                    .resizable(resizingMode: .stretch)
-                                                    .aspectRatio(contentMode: .fit)
-                                                    .padding(.bottom, 10.0)
-                                                    .frame(width: 150.0, height: 150.0)
-                                            }
-                                            .background(Rectangle()
-                                                .foregroundColor(Color.white))
-                                            .cornerRadius(15)
-                                            
-                                            VStack {
-                                                Text("Name")
-                                                // .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
-                                                    .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
-                                                Image("camera")
-                                                    .resizable(resizingMode: .stretch)
-                                                    .aspectRatio(contentMode: .fit)
-                                                    .padding(.bottom, 10.0)
-                                                    .frame(width: 150.0, height: 150.0)
-                                            }
-                                            .background(Rectangle()
-                                                .foregroundColor(Color.white))
-                                            .cornerRadius(15)
+                                            Image("camera")
+                                                .resizable(resizingMode: .stretch)
+                                                .aspectRatio(contentMode: .fit)
+                                                .padding(.bottom, 10.0)
+                                                .frame(width: 150.0, height: 150.0)
                                         }
+                                        .background(Rectangle()
+                                            .foregroundColor(Color.white))
+                                        .cornerRadius(15)
+                                        
+                                        VStack {
+                                            Text("Name")
+                                            .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
+                                                .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
+                                            Image("camera")
+                                                .resizable(resizingMode: .stretch)
+                                                .aspectRatio(contentMode: .fit)
+                                                .padding(.bottom, 10.0)
+                                                .frame(width: 150.0, height: 150.0)
+                                        }
+                                        .background(Rectangle()
+                                            .foregroundColor(Color.white))
+                                        .cornerRadius(15)
+                                        
+                                        VStack {
+                                            Text("Name")
+                                            .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
+                                                .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
+                                            Image("camera")
+                                                .resizable(resizingMode: .stretch)
+                                                .aspectRatio(contentMode: .fit)
+                                                .padding(.bottom, 10.0)
+                                                .frame(width: 150.0, height: 150.0)
+                                        }
+                                        .background(Rectangle()
+                                            .foregroundColor(Color.white))
+                                        .cornerRadius(15)
                                     }
-                                    
+                                }
+                                
+                                Text("Bags")
+                                    .font(Font.custom("AtkinsonHyperlegible-Regular", size: 36))
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
+                                ScrollView(.horizontal){
+                                    HStack(spacing: 20) {
+                                        VStack {
+                                            Text("Name")
+                                            .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
+                                                .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
+                                            
+                                            Image("camera")
+                                                .resizable(resizingMode: .stretch)
+                                                .aspectRatio(contentMode: .fit)
+                                                .padding(.bottom, 10.0)
+                                                .frame(width: 150.0, height: 150.0)
+                                        }
+                                        .background(Rectangle()
+                                            .foregroundColor(Color.white))
+                                        .cornerRadius(15)
+                                        
+                                        VStack {
+                                            Text("Name")
+                                            .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
+                                                .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
+                                            Image("camera")
+                                                .resizable(resizingMode: .stretch)
+                                                .aspectRatio(contentMode: .fit)
+                                                .padding(.bottom, 10.0)
+                                                .frame(width: 150.0, height: 150.0)
+                                        }
+                                        .background(Rectangle()
+                                            .foregroundColor(Color.white))
+                                        .cornerRadius(15)
+                                        
+                                        VStack {
+                                            Text("Name")
+                                            .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
+                                                .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
+                                            Image("camera")
+                                                .resizable(resizingMode: .stretch)
+                                                .aspectRatio(contentMode: .fit)
+                                                .padding(.bottom, 10.0)
+                                                .frame(width: 150.0, height: 150.0)
+                                        }
+                                        .background(Rectangle()
+                                            .foregroundColor(Color.white))
+                                        .cornerRadius(15)
+                                    }
+                                }
+                                
+                                Text("Accessories")
+                                    .font(Font.custom("AtkinsonHyperlegible-Regular", size: 36))
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
+                                ScrollView(.horizontal){
+                                    HStack(spacing: 20) {
+                                        VStack {
+                                            Text("Name")
+                                            .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
+                                                .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
+                                            
+                                            Image("camera")
+                                                .resizable(resizingMode: .stretch)
+                                                .aspectRatio(contentMode: .fit)
+                                                .padding(.bottom, 10.0)
+                                                .frame(width: 150.0, height: 150.0)
+                                        }
+                                        .background(Rectangle()
+                                            .foregroundColor(Color.white))
+                                        .cornerRadius(15)
+                                        
+                                        VStack {
+                                            Text("Name")
+                                            .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
+                                                .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
+                                            Image("camera")
+                                                .resizable(resizingMode: .stretch)
+                                                .aspectRatio(contentMode: .fit)
+                                                .padding(.bottom, 10.0)
+                                                .frame(width: 150.0, height: 150.0)
+                                        }
+                                        .background(Rectangle()
+                                            .foregroundColor(Color.white))
+                                        .cornerRadius(15)
+                                        
+                                        VStack {
+                                            Text("Name")
+                                            .font(Font.custom("AtkinsonHyperlegible-Regular", size: 24))
+                                                .foregroundColor(Color(red: 53/255, green: 60/255, blue: 90/255))
+                                            Image("camera")
+                                                .resizable(resizingMode: .stretch)
+                                                .aspectRatio(contentMode: .fit)
+                                                .padding(.bottom, 10.0)
+                                                .frame(width: 150.0, height: 150.0)
+                                        }
+                                        .background(Rectangle()
+                                            .foregroundColor(Color.white))
+                                        .cornerRadius(15)
+                                    }
                                 }
                             }
                             .padding(.horizontal)

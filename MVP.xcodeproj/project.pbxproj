@@ -55,6 +55,8 @@
 		BDA3CE222C5C47BB006B78B1 /* ItemsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemsContainer.swift; path = "../../Downloads/youtube-content-2023-main 2/See How To Store An Image In SwiftData 📸 | SwiftData Tutorial/Source Code/Final/ToDos/ToDos/ItemsContainer.swift"; sourceTree = "<group>"; };
 		BDA3CE232C5C47BB006B78B1 /* UpdateToDoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UpdateToDoView.swift; path = "../../Downloads/youtube-content-2023-main 2/See How To Store An Image In SwiftData 📸 | SwiftData Tutorial/Source Code/Final/ToDos/ToDos/UpdateToDoView.swift"; sourceTree = "<group>"; };
 		BDA3CE292C5C47C2006B78B1 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = "../../Downloads/youtube-content-2023-main 2/See How To Store An Image In SwiftData 📸 | SwiftData Tutorial/Source Code/Final/ToDos/ToDos/Item.swift"; sourceTree = "<group>"; };
+		BD9864A72C5C2B6A0007C8FA /* fastFashionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fastFashionView.swift; sourceTree = "<group>"; };
+		BD9864A92C5C3A890007C8FA /* theFactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = theFactsView.swift; sourceTree = "<group>"; };
 		BDA9BEEB2C584A110055FF8E /* MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDA9BEEE2C584A110055FF8E /* MVPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPApp.swift; sourceTree = "<group>"; };
 		BDA9BEF02C584A110055FF8E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,7 +75,6 @@
 		BDCEB2692C598DF900BA9966 /* calendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarView.swift; sourceTree = "<group>"; };
 		BDEE114B2C5AB84B0091E608 /* profileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileView.swift; sourceTree = "<group>"; };
 		BDEE114D2C5AB8710091E608 /* mapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapView.swift; sourceTree = "<group>"; };
-		BDFE43A52C5AD6F600A9C9F7 /* AtkinsonHyperlegible-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AtkinsonHyperlegible-Regular.ttf"; path = "../Downloads/Atkinson_Hyperlegible/AtkinsonHyperlegible-Regular.ttf"; sourceTree = "<group>"; };
 		BDFE43A62C5AD74E00A9C9F7 /* AtkinsonHyperlegible-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AtkinsonHyperlegible-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,7 +116,8 @@
 			children = (
 				BDCEB2622C595D2900BA9966 /* Times New Roman MT Std Condensed.otf */,
 				BDCEB2682C5984B300BA9966 /* AtkinsonHyperlegible-Bold.ttf */,
-				BDFE43A52C5AD6F600A9C9F7 /* AtkinsonHyperlegible-Regular.ttf */,
+				BDFE43A62C5AD74E00A9C9F7 /* AtkinsonHyperlegible-Regular.ttf */,
+				BDCEB2652C59621800BA9966 /* Times New Roman MT Condensed Italic.otf */,
 				BDA9BEED2C584A110055FF8E /* MVP */,
 				BDA9BEFE2C584A120055FF8E /* MVPTests */,
 				BDA9BF082C584A120055FF8E /* MVPUITests */,
@@ -137,8 +139,6 @@
 		BDA9BEED2C584A110055FF8E /* MVP */ = {
 			isa = PBXGroup;
 			children = (
-				BDFE43A62C5AD74E00A9C9F7 /* AtkinsonHyperlegible-Regular.ttf */,
-				BDCEB2652C59621800BA9966 /* Times New Roman MT Condensed Italic.otf */,
 				BDA9BF1D2C584DDF0055FF8E /* Info.plist */,
 				BDA9BEEE2C584A110055FF8E /* MVPApp.swift */,
 				BDA9BEF02C584A110055FF8E /* ContentView.swift */,
@@ -154,6 +154,8 @@
 				BDA3CE232C5C47BB006B78B1 /* UpdateToDoView.swift */,
 				BDA3CE292C5C47C2006B78B1 /* Item.swift */,
 				BD9ED9602C5BF672002CA601 /* DefaultCategories.json */,
+				BD9864A72C5C2B6A0007C8FA /* fastFashionView.swift */,
+				BD9864A92C5C3A890007C8FA /* theFactsView.swift */,
 				BDA9BEF22C584A120055FF8E /* Assets.xcassets */,
 				BDA9BEF42C584A120055FF8E /* Preview Content */,
 			);
@@ -332,7 +334,9 @@
 				BDA3CE2A2C5C47C2006B78B1 /* Item.swift in Sources */,
 				BDA9BEEF2C584A110055FF8E /* MVPApp.swift in Sources */,
 				BD9ED9632C5BF67A002CA601 /* TodoView.swift in Sources */,
+				BD9864AA2C5C3A890007C8FA /* theFactsView.swift in Sources */,
 				BDEE114C2C5AB84B0091E608 /* profileView.swift in Sources */,
+				BD9864A82C5C2B6A0007C8FA /* fastFashionView.swift in Sources */,
 				BDEE114E2C5AB8710091E608 /* mapView.swift in Sources */,
 				BDA3CE252C5C47BB006B78B1 /* CategoriesJSONDecoder.swift in Sources */,
 			);
@@ -503,6 +507,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MVP/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access your camera";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need to access your location.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need to access your photo library.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -534,6 +541,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MVP/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access your camera";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need to access your location.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need to access your photo library.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
