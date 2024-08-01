@@ -9,7 +9,7 @@ import SwiftUI
 
 struct mapPopUp: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Link("Sustain Your style", destination: URL(string:"https://www.sustainyourstyle.org/en/reducing-our-impact")!)
     }
 }
 

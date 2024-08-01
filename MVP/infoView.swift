@@ -9,6 +9,7 @@ import SwiftUI
 
 struct infoView: View {
     @State private var showfastFashionView = false
+    @State private var showtheFactsView = false
     var body: some View {
         NavigationStack{
             ZStack (alignment: .bottom){
@@ -39,10 +40,28 @@ struct infoView: View {
                                     .padding(.trailing)
                             }
                         }
+                        ZStack (alignment:.leading){
+                                                    Image("trashFast")
+                                                        .resizable(resizingMode: .stretch)
+                                                        .aspectRatio(contentMode: .fit)
+                                                        .opacity(0.6)
+                                                    Button{
+                                                        withAnimation{
+                                                            self.showtheFactsView = true}
+                                                    }label:{
+                                                        Text ("The Facts")
+                                                            .font(Font.custom("Times New Roman MT Condensed Italic", size: 50))
+                                                            .foregroundColor(Color(red: 40/255, green: 80/255, blue: 46/255))
+                                                            .lineLimit(2)
+                                                            .padding(.leading)
+                                                    }
+                                                }
                         
                     }
                     if showfastFashionView{
-                        fastFashionView()}
+                        fastFashionView(showfastFashionView: $showfastFashionView)}
+                    if showtheFactsView{
+                        theFactsView(showtheFactsView: $showtheFactsView)}
                     Spacer()
                     //Toolbar
                     HStack (alignment : .top){

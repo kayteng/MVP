@@ -8,14 +8,24 @@
 import SwiftUI
 
 struct fastFashionView: View {
+    
+    @Binding var showfastFashionView: Bool
+    
     var body: some View {
         ScrollView{
             VStack{
+                Button{
+                    self.showfastFashionView = false
+                } label: {Text("⌄")
+                        .font(Font.custom("AtkinsonHyperlegible-Regular", size: 60))
+                        .fontWeight(.bold)
+                        .foregroundColor(Color(red: 71/255, green: 134/255, blue: 46/255))
+                }
                 Text("Fast Fashion Stats")
                     .font(Font.custom("AtkinsonHyperlegible-Regular", size: 30))
                     .fontWeight(.bold)
                     .foregroundColor(Color(red: 71/255, green: 134/255, blue: 46/255))
-                    .padding()
+                    .padding([.leading, .bottom, .trailing])
             }
             VStack(alignment:.leading){
                 Text("                                                                                           ")
@@ -76,6 +86,6 @@ struct fastFashionView: View {
     }
 }
 
-#Preview {
-    fastFashionView()
-}
+//#Preview {
+//    fastFashionView()
+//}
