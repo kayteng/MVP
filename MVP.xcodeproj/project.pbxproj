@@ -60,7 +60,6 @@
 		BDEC5A142C5AE0550042AF78 /* NewClosetItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClosetItemView.swift; sourceTree = "<group>"; };
 		BDEE114B2C5AB84B0091E608 /* profileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileView.swift; sourceTree = "<group>"; };
 		BDEE114D2C5AB8710091E608 /* mapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapView.swift; sourceTree = "<group>"; };
-		BDFE43A52C5AD6F600A9C9F7 /* AtkinsonHyperlegible-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AtkinsonHyperlegible-Regular.ttf"; path = "../Downloads/Atkinson_Hyperlegible/AtkinsonHyperlegible-Regular.ttf"; sourceTree = "<group>"; };
 		BDFE43A62C5AD74E00A9C9F7 /* AtkinsonHyperlegible-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AtkinsonHyperlegible-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,7 +93,8 @@
 			children = (
 				BDCEB2622C595D2900BA9966 /* Times New Roman MT Std Condensed.otf */,
 				BDCEB2682C5984B300BA9966 /* AtkinsonHyperlegible-Bold.ttf */,
-				BDFE43A52C5AD6F600A9C9F7 /* AtkinsonHyperlegible-Regular.ttf */,
+				BDFE43A62C5AD74E00A9C9F7 /* AtkinsonHyperlegible-Regular.ttf */,
+				BDCEB2652C59621800BA9966 /* Times New Roman MT Condensed Italic.otf */,
 				BDA9BEED2C584A110055FF8E /* MVP */,
 				BDA9BEFE2C584A120055FF8E /* MVPTests */,
 				BDA9BF082C584A120055FF8E /* MVPUITests */,
@@ -115,8 +115,6 @@
 		BDA9BEED2C584A110055FF8E /* MVP */ = {
 			isa = PBXGroup;
 			children = (
-				BDFE43A62C5AD74E00A9C9F7 /* AtkinsonHyperlegible-Regular.ttf */,
-				BDCEB2652C59621800BA9966 /* Times New Roman MT Condensed Italic.otf */,
 				BDA9BF1D2C584DDF0055FF8E /* Info.plist */,
 				BDA9BEEE2C584A110055FF8E /* MVPApp.swift */,
 				BDA9BEF02C584A110055FF8E /* ContentView.swift */,
