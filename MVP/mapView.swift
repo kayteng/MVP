@@ -6,8 +6,40 @@
 //
 
 import SwiftUI
+import MapKit
+
+
+extension CLLocationCoordinate2D {
+    static let newYork: Self = .init(
+        latitude: 40.730610,
+        longitude: -73.935242
+    )
+    
+    static let seattle: Self = .init(
+        latitude: 47.608013,
+        longitude: -122.335167
+    )
+    
+    static let sanFrancisco: Self = .init(
+        latitude: 37.733795,
+        longitude: -122.446747
+    )
+    
+    static let losAngeles: Self = .init(
+        latitude: 34.0549,
+        longitude: -118.2426
+    )
+    
+
+    
+}
 
 struct mapView: View {
+    @State private var position: MapCameraPosition = .userLocation(
+               fallback: .camera(
+                   MapCamera(centerCoordinate: .losAngeles, distance: 1000000)
+               )
+           )
     var body: some View {
         NavigationStack {
             ZStack (alignment: .bottom){
@@ -19,11 +51,29 @@ struct mapView: View {
                             .foregroundColor(Color(red: 57/255, green: 60/255, blue: 90/255))
                             .padding(.leading)
                     ScrollView{
-                        Image("camera")
-                            .resizable(resizingMode: .stretch)
-                            .aspectRatio(contentMode: .fit)
-                            .border(Color(red: 193/255, green: 138/255, blue: 118/255),width:4)
-                            .padding(.horizontal)
+                        Map(position: $position) {
+                            Annotation("Seattle", coordinate: .seattle){
+                                Image(systemName: "mappin").foregroundStyle(.black)
+                                    .padding()
+                                    .background(.red)
+                                    .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                        }
+                            Marker(coordinate: .newYork) {
+                                            Label("New York", systemImage: "mappin")
+                            }
+                            Marker("San Francisco", monogram: Text("SF"), coordinate: .sanFrancisco)
+                            Marker("Los Angeles", monogram: Text("LA"), coordinate: .losAngeles)
+                        }
+                        .mapControls {
+                            MapUserLocationButton()
+                        }
+                        .padding([.leading, .bottom, .trailing])
+                        .border(Color(red: 193/255, green: 138/255, blue: 118/255),width:4)
+                        .padding(.horizontal)
+                        .onAppear {
+                            CLLocationManager().requestWhenInUseAuthorization()
+                        }
+                        .frame(width: 400.0, height: 400.0)
                         VStack(alignment:.leading){
                             Text ("More Info...")
                                 .font(Font.custom("Times New Roman MT Condensed Italic", size: 60))
