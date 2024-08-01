@@ -15,13 +15,13 @@ import SwiftUI
 class ClosetItem {
     var title: String
     //var picture: Image
-    var category: String
+//    var category: String
     
-    init( title: String, /*picture: Image,*/ category: String) {
+    init( title: String/*picture: Image,*/ /*category: String*/) {
         
         self.title = title
         //self.picture = picture
-        self.category = category
+//        self.category = category
     }
 }
 

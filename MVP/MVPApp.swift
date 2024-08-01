@@ -10,10 +10,13 @@ import SwiftData
 
 @main
 struct MVPApp: App {
+    @AppStorage("isFirstTimeLaunch") private var isFirstTimeLaunch: Bool = true
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .modelContainer(for: ClosetItem.self)
         }
+        .modelContainer(ItemsContainer.create(shouldCreateDefaults: &isFirstTimeLaunch))
+        
     }
 }

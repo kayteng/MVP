@@ -54,7 +54,7 @@ struct infoView: View {
                     .foregroundColor(Color(red: 57/255, green: 60/255, blue: 90/255))
                     .cornerRadius(45)}
                     Button{
-                        var hi = 1
+//                        var hi = 1
                     } label: {
                         Image("plus icon")
                             .resizable(resizingMode: .stretch)

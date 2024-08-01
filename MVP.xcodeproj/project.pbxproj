@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD9ED9532C5BF581002CA601 /* SwiftUIImageViewer in Frameworks */ = {isa = PBXBuildFile; productRef = BD9ED9522C5BF581002CA601 /* SwiftUIImageViewer */; };
+		BD9ED9612C5BF672002CA601 /* DefaultCategories.json in Resources */ = {isa = PBXBuildFile; fileRef = BD9ED9602C5BF672002CA601 /* DefaultCategories.json */; };
+		BD9ED9632C5BF67A002CA601 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9ED9622C5BF67A002CA601 /* TodoView.swift */; };
+		BDA3CE242C5C47BB006B78B1 /* ModifyTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA3CE1F2C5C47BB006B78B1 /* ModifyTodoView.swift */; };
+		BDA3CE252C5C47BB006B78B1 /* CategoriesJSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA3CE202C5C47BB006B78B1 /* CategoriesJSONDecoder.swift */; };
+		BDA3CE262C5C47BB006B78B1 /* CreateCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA3CE212C5C47BB006B78B1 /* CreateCategoryView.swift */; };
+		BDA3CE272C5C47BB006B78B1 /* ItemsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA3CE222C5C47BB006B78B1 /* ItemsContainer.swift */; };
+		BDA3CE282C5C47BB006B78B1 /* UpdateToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA3CE232C5C47BB006B78B1 /* UpdateToDoView.swift */; };
+		BDA3CE2A2C5C47C2006B78B1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA3CE292C5C47C2006B78B1 /* Item.swift */; };
 		BDA9BEEF2C584A110055FF8E /* MVPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA9BEEE2C584A110055FF8E /* MVPApp.swift */; };
 		BDA9BEF12C584A110055FF8E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA9BEF02C584A110055FF8E /* ContentView.swift */; };
 		BDA9BEF32C584A120055FF8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDA9BEF22C584A120055FF8E /* Assets.xcassets */; };
@@ -16,8 +25,6 @@
 		BDA9BF0C2C584A120055FF8E /* MVPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA9BF0B2C584A120055FF8E /* MVPUITestsLaunchTests.swift */; };
 		BDAC53632C5AA30900706A15 /* infoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC53622C5AA30900706A15 /* infoView.swift */; };
 		BDCEB26A2C598DF900BA9966 /* calendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCEB2692C598DF900BA9966 /* calendarView.swift */; };
-		BDEC5A132C5AD9620042AF78 /* ClosetItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEC5A122C5AD9620042AF78 /* ClosetItem.swift */; };
-		BDEC5A152C5AE0550042AF78 /* NewClosetItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEC5A142C5AE0550042AF78 /* NewClosetItemView.swift */; };
 		BDEE114C2C5AB84B0091E608 /* profileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEE114B2C5AB84B0091E608 /* profileView.swift */; };
 		BDEE114E2C5AB8710091E608 /* mapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEE114D2C5AB8710091E608 /* mapView.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +47,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD9ED9602C5BF672002CA601 /* DefaultCategories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = DefaultCategories.json; path = "../../youtube-content-2023/See How To Store An Image In SwiftData 📸 | SwiftData Tutorial/Source Code/Final/ToDos/ToDos/DefaultCategories.json"; sourceTree = "<group>"; };
+		BD9ED9622C5BF67A002CA601 /* TodoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodoView.swift; path = "../../youtube-content-2023/See How To Store An Image In SwiftData 📸 | SwiftData Tutorial/Source Code/Final/ToDos/ToDos/TodoView.swift"; sourceTree = "<group>"; };
+		BDA3CE1F2C5C47BB006B78B1 /* ModifyTodoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModifyTodoView.swift; path = "../../Downloads/youtube-content-2023-main 2/See How To Store An Image In SwiftData 📸 | SwiftData Tutorial/Source Code/Final/ToDos/ToDos/ModifyTodoView.swift"; sourceTree = "<group>"; };
+		BDA3CE202C5C47BB006B78B1 /* CategoriesJSONDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoriesJSONDecoder.swift; path = "../../Downloads/youtube-content-2023-main 2/See How To Store An Image In SwiftData 📸 | SwiftData Tutorial/Source Code/Final/ToDos/ToDos/CategoriesJSONDecoder.swift"; sourceTree = "<group>"; };
+		BDA3CE212C5C47BB006B78B1 /* CreateCategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateCategoryView.swift; path = "../../Downloads/youtube-content-2023-main 2/See How To Store An Image In SwiftData 📸 | SwiftData Tutorial/Source Code/Final/ToDos/ToDos/CreateCategoryView.swift"; sourceTree = "<group>"; };
+		BDA3CE222C5C47BB006B78B1 /* ItemsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemsContainer.swift; path = "../../Downloads/youtube-content-2023-main 2/See How To Store An Image In SwiftData 📸 | SwiftData Tutorial/Source Code/Final/ToDos/ToDos/ItemsContainer.swift"; sourceTree = "<group>"; };
+		BDA3CE232C5C47BB006B78B1 /* UpdateToDoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UpdateToDoView.swift; path = "../../Downloads/youtube-content-2023-main 2/See How To Store An Image In SwiftData 📸 | SwiftData Tutorial/Source Code/Final/ToDos/ToDos/UpdateToDoView.swift"; sourceTree = "<group>"; };
+		BDA3CE292C5C47C2006B78B1 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = "../../Downloads/youtube-content-2023-main 2/See How To Store An Image In SwiftData 📸 | SwiftData Tutorial/Source Code/Final/ToDos/ToDos/Item.swift"; sourceTree = "<group>"; };
 		BDA9BEEB2C584A110055FF8E /* MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDA9BEEE2C584A110055FF8E /* MVPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPApp.swift; sourceTree = "<group>"; };
 		BDA9BEF02C584A110055FF8E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,8 +71,6 @@
 		BDCEB2652C59621800BA9966 /* Times New Roman MT Condensed Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Times New Roman MT Condensed Italic.otf"; sourceTree = "<group>"; };
 		BDCEB2682C5984B300BA9966 /* AtkinsonHyperlegible-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AtkinsonHyperlegible-Bold.ttf"; sourceTree = "<group>"; };
 		BDCEB2692C598DF900BA9966 /* calendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarView.swift; sourceTree = "<group>"; };
-		BDEC5A122C5AD9620042AF78 /* ClosetItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetItem.swift; sourceTree = "<group>"; };
-		BDEC5A142C5AE0550042AF78 /* NewClosetItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClosetItemView.swift; sourceTree = "<group>"; };
 		BDEE114B2C5AB84B0091E608 /* profileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileView.swift; sourceTree = "<group>"; };
 		BDEE114D2C5AB8710091E608 /* mapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapView.swift; sourceTree = "<group>"; };
 		BDFE43A52C5AD6F600A9C9F7 /* AtkinsonHyperlegible-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AtkinsonHyperlegible-Regular.ttf"; path = "../Downloads/Atkinson_Hyperlegible/AtkinsonHyperlegible-Regular.ttf"; sourceTree = "<group>"; };
@@ -69,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD9ED9532C5BF581002CA601 /* SwiftUIImageViewer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +103,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD9ED9512C5BF581002CA601 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BDA9BEE22C584A110055FF8E = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +120,7 @@
 				BDA9BEFE2C584A120055FF8E /* MVPTests */,
 				BDA9BF082C584A120055FF8E /* MVPUITests */,
 				BDA9BEEC2C584A110055FF8E /* Products */,
+				BD9ED9512C5BF581002CA601 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,12 +142,18 @@
 				BDA9BF1D2C584DDF0055FF8E /* Info.plist */,
 				BDA9BEEE2C584A110055FF8E /* MVPApp.swift */,
 				BDA9BEF02C584A110055FF8E /* ContentView.swift */,
-				BDEC5A142C5AE0550042AF78 /* NewClosetItemView.swift */,
-				BDEC5A122C5AD9620042AF78 /* ClosetItem.swift */,
+				BD9ED9622C5BF67A002CA601 /* TodoView.swift */,
 				BDCEB2692C598DF900BA9966 /* calendarView.swift */,
 				BDEE114B2C5AB84B0091E608 /* profileView.swift */,
 				BDEE114D2C5AB8710091E608 /* mapView.swift */,
 				BDAC53622C5AA30900706A15 /* infoView.swift */,
+				BDA3CE202C5C47BB006B78B1 /* CategoriesJSONDecoder.swift */,
+				BDA3CE212C5C47BB006B78B1 /* CreateCategoryView.swift */,
+				BDA3CE222C5C47BB006B78B1 /* ItemsContainer.swift */,
+				BDA3CE1F2C5C47BB006B78B1 /* ModifyTodoView.swift */,
+				BDA3CE232C5C47BB006B78B1 /* UpdateToDoView.swift */,
+				BDA3CE292C5C47C2006B78B1 /* Item.swift */,
+				BD9ED9602C5BF672002CA601 /* DefaultCategories.json */,
 				BDA9BEF22C584A120055FF8E /* Assets.xcassets */,
 				BDA9BEF42C584A120055FF8E /* Preview Content */,
 			);
@@ -173,6 +201,9 @@
 			dependencies = (
 			);
 			name = MVP;
+			packageProductDependencies = (
+				BD9ED9522C5BF581002CA601 /* SwiftUIImageViewer */,
+			);
 			productName = MVP;
 			productReference = BDA9BEEB2C584A110055FF8E /* MVP.app */;
 			productType = "com.apple.product-type.application";
@@ -245,6 +276,9 @@
 				Base,
 			);
 			mainGroup = BDA9BEE22C584A110055FF8E;
+			packageReferences = (
+				BD9ED9502C5BF56A002CA601 /* XCRemoteSwiftPackageReference "swiftui-image-viewer" */,
+			);
 			productRefGroup = BDA9BEEC2C584A110055FF8E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -263,6 +297,7 @@
 			files = (
 				BDA9BEF62C584A120055FF8E /* Preview Assets.xcassets in Resources */,
 				BDA9BEF32C584A120055FF8E /* Assets.xcassets in Resources */,
+				BD9ED9612C5BF672002CA601 /* DefaultCategories.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,14 +322,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDEC5A152C5AE0550042AF78 /* NewClosetItemView.swift in Sources */,
+				BDA3CE262C5C47BB006B78B1 /* CreateCategoryView.swift in Sources */,
+				BDA3CE272C5C47BB006B78B1 /* ItemsContainer.swift in Sources */,
+				BDA3CE242C5C47BB006B78B1 /* ModifyTodoView.swift in Sources */,
+				BDA3CE282C5C47BB006B78B1 /* UpdateToDoView.swift in Sources */,
 				BDAC53632C5AA30900706A15 /* infoView.swift in Sources */,
-				BDEC5A132C5AD9620042AF78 /* ClosetItem.swift in Sources */,
 				BDCEB26A2C598DF900BA9966 /* calendarView.swift in Sources */,
 				BDA9BEF12C584A110055FF8E /* ContentView.swift in Sources */,
+				BDA3CE2A2C5C47C2006B78B1 /* Item.swift in Sources */,
 				BDA9BEEF2C584A110055FF8E /* MVPApp.swift in Sources */,
+				BD9ED9632C5BF67A002CA601 /* TodoView.swift in Sources */,
 				BDEE114C2C5AB84B0091E608 /* profileView.swift in Sources */,
 				BDEE114E2C5AB8710091E608 /* mapView.swift in Sources */,
+				BDA3CE252C5C47BB006B78B1 /* CategoriesJSONDecoder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +668,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BD9ED9502C5BF56A002CA601 /* XCRemoteSwiftPackageReference "swiftui-image-viewer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fuzzzlove/swiftui-image-viewer.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BD9ED9522C5BF581002CA601 /* SwiftUIImageViewer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD9ED9502C5BF56A002CA601 /* XCRemoteSwiftPackageReference "swiftui-image-viewer" */;
+			productName = SwiftUIImageViewer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BDA9BEE32C584A110055FF8E /* Project object */;
 }
